@@ -28,12 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Yu Gothic UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(109, 46);
+            label1.TabIndex = 0;
+            label1.Text = "label1";
+            label1.Click += label1_Click;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Yu Gothic UI", 50F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(582, 126);
+            button1.Name = "button1";
+            button1.Size = new Size(100, 100);
+            button1.TabIndex = 1;
+            button1.Text = "↑";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Yu Gothic UI", 50F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Location = new Point(476, 232);
+            button2.Name = "button2";
+            button2.Size = new Size(100, 100);
+            button2.TabIndex = 2;
+            button2.Text = "←";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Font = new Font("Yu Gothic UI", 50F, FontStyle.Regular, GraphicsUnit.Point);
+            button3.Location = new Point(688, 232);
+            button3.Name = "button3";
+            button3.Size = new Size(100, 100);
+            button3.TabIndex = 3;
+            button3.Text = "→";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Font = new Font("Yu Gothic UI", 50F, FontStyle.Regular, GraphicsUnit.Point);
+            button4.Location = new Point(582, 338);
+            button4.Name = "button4";
+            button4.Size = new Size(100, 100);
+            button4.TabIndex = 4;
+            button4.Text = "↓";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
     }
 }
